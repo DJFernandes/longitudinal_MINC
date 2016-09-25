@@ -54,11 +54,6 @@ if len(xfms)!=(len(tknots)-1):
 
 comm="%"+time.strftime("%d/%m/%Y")+" "+time.strftime("%H:%M:%S")+">>> "+'python xfmspline.py "'+",".join(map(str,tknots))+'" "'+",".join(xfms)+'" "'+",".join(map(str,tinterp))+'" '+outdir
 
-#tknots=[65,36,29]
-#xfms=["diff_transforms/p65_to_p36/p65_to_p36_CM.xfm","diff_transforms/p36_to_p29/p36_to_p29_CM.xfm"]
-#tinterp=[29,33]
-#outdir="splinetest"
-
 if not os.path.exists(outdir):
     os.makedirs(outdir)
 
